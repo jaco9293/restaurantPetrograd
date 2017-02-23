@@ -28,6 +28,21 @@ function visProdukt(produkt) {
     klon.querySelector(".data_rabatpris").innerHTML = rabatpris;
 
     klon.querySelector(".data_billede").src = "/imgs/small/" + produkt.billede + "-sm.jpg";
+    if (produkt.udsolgt == false) {
+        //produktet er udsolgt
+        //produktet er ikke udsolgt
+        var udsolgttekst = klon.querySelector(".udsolgttekst");
+        udsolgttekst.parentNode.removeChild(udsolgttekst);
+    } else {
+        klon.querySelector(".pris").classList.add("udsolgt");
+    }
+    if (produkt.udsolgt == true || produkt.rabatsats == 0) {
+        //der er ikke rabat, satsen fjernes
+        var rabatpris = klon.querySelector(".rabatpris");
+        rabatpris.parentNode.removeChild(rabatpris);
+    } else {
+        klon.querySelector(".pris").classList.add("udsolgt");
+    }
 
 
 

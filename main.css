@@ -22,3 +22,6 @@ p {
 .ret {
     margin-bottom: 5vw;
 }
+.udsolgt {
+    text-decoration: line-through;
+}
