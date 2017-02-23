@@ -1,0 +1,24 @@
+body {
+    background-color: blue;
+}
+.header {
+    font-family: 'brandon grotesque';
+    font-size: 8vw;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+.underoverskrift {
+    font-family: 'brandon grotesque';
+    font-size: 3.5vw;
+    margin-bottom: 2.5vw;
+}
+p {
+    font-size: 1vw;
+}
+.navnpaaret {
+    font-family: 'brandon grotesque';
+    font-size: 1.3vw;
+}
+.ret {
+    margin-bottom: 5vw;
+}
