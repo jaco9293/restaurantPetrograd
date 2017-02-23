@@ -1,5 +1,4 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -17,234 +16,66 @@
         <h1 class="header">Restaurant Petrograd</h1>
     </nav>
 
-
-
-    <section class="appetizer container col-sm-8 col-sm-offset-1">
-        <h3 class="underoverskrift">Forretter</h3>
-        <div class="ret row">
-            <img class="col-sm-5" src="imgs/small/ringbroed-sm.jpg">
-            <h4 class="navnpaaret">Russisk ringbrød med vindruer</h4>
-            <p>
-                <br> Russisk ringbrød efter en klassisk opskrift fra Karapatien. Dejen blandes koldhæver 30 dage, inde brødet bages over bål. Meget sprødt, godt med Karapatisk bjerggedsmør.
-                <br>
-
-                <br> 39,- (50% rabat - fratrækkes ved betaling)
-            </p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                Mere info
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Info</h4>
-                        </div>
-                        <div class="modal-body">
-                            Allergener: Laktose
-                            <br>Vegetarisk
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                        </div>
-                    </div>
-                </div>
+    <!-- MAIN -->
+    <template id="produkt_template">
+        <section class="appetizer container col-sm-8 col-sm-offset-1">
+            <h3 class="underoverskrift">Forretter</h3>
+            <div class="ret row">
+                <img class="col-sm-5" class="data_billede" src="imgs/small/ringbroed-sm.jpg">
+                <h4 class="navnpaaret data_navn">DATA_NAVN</h4>
+                <h4 class="udsolgttekst">DATA_UDSOLGTTEKST</h4>
+                <h4 class="pris">Pris:<span class="data_pris">DATA_PRIS</span>,-</h4>
+                <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h4>
+                <p class="produktinfo data_produktinfo">
+                    DATA_PRODUKTINFO
+                </p>
             </div>
+    </template>
+    <!-- CABANOSSI M. RØDBEDECREME -->
 
-        </div>
+    <div class="ret row">
+        <img class="col-sm-5" src="imgs/small/rodbede-cabanossi-sm.jpg">
+        <h4 class="navnpaaret">Cabanossi med rødbedecreme</h4>
+        <p>
+            <br> Cabanossi med rødbedecreme og creme er egentlig en forret, men kammerat Vladimir elskede denne ret så højt, at han forbød restauranter i Krigien at sælge det som andet end en hovedret. Vi anbefaler det dog som forret, inden en god Bortsjs. Skylles helst ned med vodka.
 
-        <!-- CABANOSSI M. RØDBEDECREME -->
+            <br>
 
-        <div class="ret row">
-            <img class="col-sm-5" src="imgs/small/rodbede-cabanossi-sm.jpg">
-            <h4 class="navnpaaret">Cabanossi med rødbedecreme
+            <br> 49,-
+        </p>
+
+
+    </div>
+
+    <!-- CAVIAR BRUSCHETTA -->
+    <div class="ret row">
+        <img class="col-sm-5" src="imgs/small/caviarbruschetta-sm.jpg">
+        <h4 class="navnpaaret">Caviar bruschetta
 </h4>
-            <p>
-                <br> Cabanossi med rødbedecreme og creme er egentlig en forret, men kammerat Vladimir elskede denne ret så højt, at han forbød restauranter i Krigien at sælge det som andet end en hovedret. Vi anbefaler det dog som forret, inden en god Bortsjs. Skylles helst ned med vodka.
-
-                <br>
-
-                <br> 49,-
-            </p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                Mere info
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Info</h4>
-                        </div>
-                        <div class="modal-body">
-                            Allergener: Laktose
-                            <br>Vegetarisk
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- CAVIAR BRUSCHETTA -->
-        <div class="ret row">
-            <img class="col-sm-5" src="imgs/small/caviarbruschetta-sm.jpg">
-            <h4 class="navnpaaret">Caviar bruschetta
-</h4>
-            <p>
-                <br> Til denne dejlige Bruschetta anvender vi kun de dejligste sibiriske Caviar. Caviarerne presses ud af fiskene mens de stadig er levende, og vædes derefter i Putinka Vodka. Der er masser af bjerggedesmør på bruschettaene.
+        <p>
+            <br> Til denne dejlige Bruschetta anvender vi kun de dejligste sibiriske Caviar. Caviarerne presses ud af fiskene mens de stadig er levende, og vædes derefter i Putinka Vodka. Der er masser af bjerggedesmør på bruschettaene.
+            <br>
+            <br> 49,-
+        </p>
 
 
-                <br>
+    </div>
 
-                <br> 49,-
-            </p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                Mere info
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Info</h4>
-                        </div>
-                        <div class="modal-body">
-                            Allergener: ingen
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Baltisk bondesuppe -->
-        <div class="ret row">
-            <img class="col-sm-5" src="imgs/small/baltiskbondesuppe-sm.jpg">
-            <h4 class="navnpaaret">Baltisk bondesuppe</h4>
-            <p>
-                <br> Baltisk bondesuppe er en solid starter. Godt til dig, der skal drikke godt igennem under måltidet. Suppen består af ged, grønt og masser af løg.
-
-
-
-                <br>
-
-                <br> 79,-
-            </p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                Mere info
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Info</h4>
-                        </div>
-                        <div class="modal-body">
-                            Allergener: ingen
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
+    <!-- Baltisk bondesuppe -->
+    <div class="ret row">
+        <img class="col-sm-5" src="imgs/small/baltiskbondesuppe-sm.jpg">
+        <h4 class="navnpaaret">Baltisk bondesuppe</h4>
+        <p>
+            <br> Baltisk bondesuppe er en solid starter. Godt til dig, der skal drikke godt igennem under måltidet. Suppen består af ged, grønt og masser af løg.
+            <br>
+            <br> 79,-
+        </p>
+    </div>
     </section>
-
-
-
-    <!--
-    <section class="maincourse container">
-        <h3 class="underoverskrift">Hovedretter</h3>
-    </section>
-    <section class="dessert container">
-        <h3 class="underoverskrift">Desserter</h3>
-    </section>
-    <section class="beverage container">
-        <h3 class="underoverskrift">Drikke</h3>
-    </section>
-    <section class="sideorders container">
-        <h3 class="underoverskrift">Sideorders</h3>
-    </section> -->
-
-
-
-
-
-
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <script src="js/js/bootstrap.min.js"></script>
-
-
-
-    <!--<script>
-        $.getJSON("jaco9293.json", dataErHentet)
-
-        function dataErHentet(data) {
-
-            data.personer.forEach(visPerson);
-        }
-
-        function visPerson(person) {
-
-            var klon = document.querySelector("#mytemplate").content.cloneNode(true);
-
-            klon.querySelector(".data_fornavn").textContent = person.fornavn;
-
-            klon.querySelector(".data_efternavn").textContent = person.efternavn;
-            klon.querySelector(".data_email").textContent = person.email;
-            klon.querySelector(".data_alder").textContent = person.alder;
-            klon.querySelector(".data_hobby").textContent = person.hobby;
-            klon.querySelector(".data_civilStatus").textContent = person.civilStatus;
-            klon.querySelector(".data_job").textContent = person.job;
-            klon.querySelector(".data_hoejde").textContent = person.hoejde;
-            klon.querySelector(".data_by").textContent = person.by;
-
-
-            //find modalboks sæt id
-            klon.querySelector(".data_email").textContent = person.email;
-            klon.querySelector(".data_hobby").textContent = person.hobby;
-            //Find modal-boks og sæt ID på
-            //
-            klon.querySelector(".modal").id = "myModal" + person.id;
-            klon.querySelector("button.modalknap").dataset.target = "#myModal" + person.id;
-            console.log(person.id);
-
-            document.querySelector(".persondata").appendChild(klon);
-
-        }
-
-    </script>-->
 
 </body>
 
