@@ -17,11 +17,14 @@
     </nav>
 
 
-    <div class="row produktliste">
+
+
+
+    <div class="row forretter">
         <!-- MAIN -->
         <template id="produkt_template">
-            <section class="appetizer container col-sm-8 col-sm-offset-1">
-                <h3 class="underoverskrift">Forretter</h3>
+            <section class="appetizer container col-sm-12 ">
+                <h3 class="underoverskrift"></h3>
                 <img class="col-sm-5 data_billede" src="imgs/small/ringbroed-sm.jpg">
                 <h4 class="navnpaaret data_navn">DATA_NAVN</h4>
                 <h4 class="udsolgttekst">Denne ret er desværre udsolgt<udsolgt></udsolgt></h4>
@@ -30,7 +33,61 @@
                 <p class="produktinfo data_produktinfo">
                     DATA_PRODUKTINFO
                 </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                    Launch demo modal
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </template>
+    </div>
+
+    <!-- hovedretter -->
+    <div class="row hovedretter">
+        <!-- MAIN -->
+        <div class="col-sm-12">
+            <h3 class="underoverskrift">Hovedretter</h1>
+        </div>
+    </div>
+
+    <!-- Desserter -->
+    <div class="row desserter">
+        <!-- MAIN -->
+        <div class="col-sm-12">
+            <h3 class="underoverskrift">Desserter</h1>
+        </div>
+    </div>
+
+    <!-- side orders -->
+    <div class="row sideorders">
+        <!-- MAIN -->
+        <div class="col-sm-12">
+            <h3 class="underoverskrift">Sideorders</h1>
+        </div>
+    </div>
+
+    <!-- drinks -->
+    <div class="row drikkevarer">
+        <!-- MAIN -->
+        <div class="col-sm-12">
+            <h3 class="underoverskrift">Drinks</h1>
+        </div>
     </div>
 
 

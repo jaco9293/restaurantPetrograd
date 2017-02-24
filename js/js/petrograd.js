@@ -47,7 +47,10 @@ function visProdukt(produkt) {
 
 
     // append klon til .produkt_liste
-    document.querySelector(".produktliste").appendChild(klon);
+    // document.querySelector(".forretter").appendChild(klon);
+
+    document.querySelector("." + produkt.kategori).appendChild(klon);
+
 
 
 }
