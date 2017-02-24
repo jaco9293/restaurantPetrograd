@@ -12,80 +12,87 @@
 
 <body class="body">
 
-    <nav class="navbar">
-        <h1 class="header">Restaurant Petrograd</h1>
+    <div class="navbar">
+
+    </div>
+    <h1 class="header">Restaurant Petrograd</h1>
+    <nav class="menu">
+        <a>Forside</a> //
+        <a>Menukort</a> //
+        <a>Kontakt</a>
+
     </nav>
 
 
-
-
+    <h3 class="overskrift">Forretter</h1>
 
     <div class="row forretter">
         <!-- MAIN -->
         <template id="produkt_template">
-            <section class="appetizer container col-sm-12 ">
+            <section class="appetizer container col-sm-5 col-sm-offset-1">
                 <h3 class="underoverskrift"></h3>
-                <img class="col-sm-5 data_billede" src="imgs/small/ringbroed-sm.jpg">
-                <h4 class="navnpaaret data_navn">DATA_NAVN</h4>
-                <h4 class="udsolgttekst">Denne ret er desværre udsolgt<udsolgt></udsolgt></h4>
-                <h4 class="pris">Pris:<span class="data_pris">DATA_PRIS</span>,-</h4>
-                <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h4>
+    <img class="col-sm-5 data_billede" src="imgs/small/ringbroed-sm.jpg">
+    <h4 class="navnpaaret data_navn">DATA_NAVN</h4>
+    <h4 class="udsolgttekst">Denne ret er desværre udsolgt<udsolgt></udsolgt></h4>
+    <h4 class="pris">Pris:<span class="data_pris">DATA_PRIS</span>,-</h4>
+    <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h4>
 
-                <!-- Button trigger modal -->
-                <button type="button" data-id="UDSKIFT_MIG" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                    More info
-                </button>
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                            </div>
-                            <div class="modal-body">
-                                <p></p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                            </div>
-                        </div>
-                    </div>
+    <!-- Button trigger modal -->
+    <button type="button" data-id="UDSKIFT_MIG" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+        More info
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                 </div>
-        </template>
+                <div class="modal-body">
+                    <p></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </template>
     </div>
 
     <!-- hovedretter -->
     <div class="row hovedretter">
-        <!-- MAIN -->
-        <div class="col-sm-12">
-            <h3 class="underoverskrift">Hovedretter</h1>
-        </div>
+        <div class="row">
+            <!-- MAIN -->
+            <div class="col-sm-5">
+                <h3 class="overskrift">Hovedretter</h1>
+        </div></div>
     </div>
 
     <!-- Desserter -->
     <div class="row desserter">
-        <!-- MAIN -->
-        <div class="col-sm-12">
-            <h3 class="underoverskrift">Desserter</h1>
-        </div>
+        <div class="row"><!-- MAIN -->
+        <div class="col-sm-5">
+            <h3 class="overskrift">Desserter</h1>
+            </div></div>
     </div>
 
     <!-- side orders -->
     <div class="row sideorders">
-        <!-- MAIN -->
-        <div class="col-sm-12">
-            <h3 class="underoverskrift">Sideorders</h1>
-        </div>
+       <div class="row"> <!-- MAIN -->
+        <div class="col-sm-5">
+            <h3 class="overskrift">Sideorders</h1>
+           </div></div>
     </div>
 
     <!-- drinks -->
     <div class="row drikkevarer">
-        <!-- MAIN -->
-        <div class="col-sm-12">
-            <h3 class="underoverskrift">Drinks</h1>
-        </div>
+       <div class="row"> <!-- MAIN -->
+        <div class="col-sm-5">
+            <h3 class="overskrift">Drinks</h1>
+           </div></div>
     </div>
 
 

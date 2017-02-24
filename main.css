@@ -1,27 +1,61 @@
 body {
-    background-color: antiquewhite;
+    background-color: #fdf7ef;
+}
+.navbar {
+    height: 200px;
+    background-image: url(imgs/small/restauranten.jpg);
+    background-size: cover;
 }
 .header {
     font-family: 'brandon grotesque';
-    font-size: 8vw;
+    font-size: 6vw;
     text-align: center;
-    margin-bottom: 5vw;
+    margin-bottom: 0vw;
+    margin-top: -1vw;
+}
+.menu {
+    text-align: center;
+}
+a {
+    font-family: 'brandon grotesque';
+    font-size: 2vw;
+}
+h1 {
+    color: #080808;
+    margin-top: 0vw;
+    z-index: 100;
 }
 .underoverskrift {
     font-family: 'brandon grotesque';
-    font-size: 3.5vw;
-    margin-bottom: 2.5vw;
+    font-size: 4vw;
+    margin-bottom: 2.0vw;
 }
 p {
     font-size: 1vw;
 }
 .navnpaaret {
     font-family: 'brandon grotesque';
-    font-size: 1.3vw;
+    font-size: 2vw;
 }
 .ret {
     margin-bottom: 5vw;
 }
 .udsolgt {
     text-decoration: line-through;
+}
+h3 {
+    width: 100vw;
+    margin-bottom: -3vw;
+    margin-top: 5vw;
+}
+h4 {
+    font-size: 1vw;
+}
+img {
+    height: 150px;
+}
+.overskrift {
+    font-size: 3vw;
+    margin-left: 10vw;
+    font-weight: 200;
 }
